@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background:url(background-image.png); */
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  display: block;
+}
+
+.main {
+  width: 620px;
+  margin: auto;
+  margin-top: 25px;
+}
+h2 {
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+.form {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px soid(255, 255, 255, 0.3);
+  box-shadow: 2px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+.name {
+  margin-left: 30px;
+  width: 125px;
+  color: #bebebe;
+  font-size: 20px;
+}
+.firstname {
+  position: relative;
+  margin-left: 30px;
+  line-height: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  padding: 7px;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.lastname {
+  position: relative;
+  /* margin-left:1px; */
+  line-height: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  padding: 7px;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.firstlabel {
+  position: relative;
+  color: #c0c0c0;
+  text-transform: capitalize;
+  font-size: 14px;
+  left: -185px;
+  top: 30px;
+}
+.lastlabel {
+  position: relative;
+  color: #c0c0c0;
+  text-transform: capitalize;
+  font-size: 14px;
+  left: -185px;
+  top: 30px;
+}
+.Email {
+  position: relative;
+  margin-left: 27px;
+  line-height: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  padding: 7px;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.mobile {
+  position: relative;
+  margin-left: 12px;
+  line-height: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  padding: 7px;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.password {
+  position: relative;
+  /* margin-left:12px; */
+  line-height: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  padding: 7px;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.box {
+  position: relative;
+  margin-left: 15px;
+  line-height: 12px;
+  border: 1px solid #ddd;
+  border-radius: 3px 3px 3px 3px;
+  outline: 0;
+  padding: 7px;
+  background-color: #fff;
+  /* box-shadow:inset 1px 1px 5px rgba(0,0,0,0.5) */
+}
+.date {
+  position: relative;
+  margin-left: 12px;
+  line-height: 12px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  padding: 7px;
+  background-color: #fff;
+  /* box-shadow:inset 1px 1px 5px rgba(0,0,0,0.5) */
+}
+.file {
+  position: relative;
+  /* margin-left:12px; */
+  line-height: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  padding: 5px;
+  background-color: #fff;
+  color: #ff0000;
+  /* box-shadow:inset 1px 1px 5px rgba(0,0,0,0.5) */
+}
+.glow-on-hover {
+  margin-left: 25px;
+  padding: 0;
+  /* width:50px; */
+  /* height: 100vh; */
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* background: #000; */
+}
+
+.glow-on-hover {
+  width: 100px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
